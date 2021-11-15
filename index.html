@@ -1,8 +1,19 @@
 <html>
  <head>
-  <title>2_layout</title>
+  <title>3_layout</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
  </head>
+
  <body class="content">
     <header class="header">
       <div class="container">
@@ -10,11 +21,16 @@
          
 <div class="content-header">
          <div class="header1"> 
-            <img id="foto1" src="img/1.png" alt="first_foto" title="1_foto">
+          <a href=""> <img id="foto1" src="img/1.png" alt="first_foto" title="1_foto"></a>
             <div id="caption">Название компании<div id="text-header">самая клевая компания</div></div>
          </div>
          <div class="nomer">
             +7(499) 777-77-77<br>+7(499) 777-77-77
+            <div class="zvyazok"><a href="#form-container" id="trigger" style="text-decoration-style: dashed; color: grey">
+            Обратная связь
+         </a>
+         </div>
+         </div>
          </div>
       </div>
 
@@ -23,6 +39,8 @@
       
     </header>
 
+    
+  
 
     <menu class="menu">
       <div class="container">
@@ -41,53 +59,175 @@
 </div>
       </div>
      </menu> 
+
+
      <section class="slider">
-        <div class="container">
-        <img id="foto-slider" src="img/slider.png">
-     </div>
-     </section>
-
-     <section class="content">
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/slayd_1.png"></div>
+        <div class="swiper-slide"><img src="img/slayd_2.png"></div>
+      </div>
       <div class="container">
-         <div class="news">
-            <div id="caption-news">
-               Новости
-            </div>
-            <div class="date">
-               14 сентебря 2013 г.
-            </div>
-            <div style="margin-top: -13px"><a href=" ">Редизайн веб-сайта архитектурного<br> бюро.</a></div>     
-            <div class="date" style="margin-top: 1px">
-               14 сентебря 2013 г.
-            </div>
-            <div style="margin-top: -14px"><a href=" ">Раскрутка интернет-магазина декора-<br>тивных стикеров и виниловых наклеек.</a></div>
-            <div class="date" style="margin-top: 0px">
-               14 сентебря 2013 г.
-            </div>
-           <div style="margin-top:-12px"> <a href=" ">SEO-продвижение сайта поставщика<br>дизель генераторов.</a></div>
-            <div clsss="date" style="margin-top: 10px">
-               14 сентебря 2013 г.
-            </div>
-           <div style="margin-top: -12px"> <a href=" ">Поисковое продвижение веб-сайта<br>поставщика гидрооборудования.</a></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-            <div id="arhiv">Архив новостей</div>
-         </div>
-         <div class="text-site" >
-            <div class="zagovolok-text">
-               Компания «Пиксель Плюс»
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+      
+
+     </section>
+
+
+
+    <menu class="second-menu">
+      <div class="container" style="margin-top:-6px;">
+         <div class="menu-wrapper">
+
+            <div class="second-menu">
+               <a href=" " style="color:#767676;">Главная</a><span> / </span>
+               <a href=" " style="color:#767676; margin-left: 4px;">Каталог</a><span style="margin-left: 4px;"> / </span>
+               <a href=" " style="text-decoration: none;color:#767676; margin-left: 8px">Бытовая техника</a>
+
             </div>
-           <div> <p>
-               Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.
-            </p></div>
-           <div style="margin-top:-13px"> <p>
-               Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
-            </p></div>
-          <div style="margin-top: 22px"> <p>
-               Наша компания является золотым сертифицированным партнёром «1С-Битрикс» (сертификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все специалисты занимающиеся изготовлением сайтов проходят обязательную сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании, после чего продолжают непрерывно поддерживать и развивать свои профессиональные навыки.
-            </p></div> 
+
+
+            </div>
+      </div>
+     </menu> 
+ <section class="content">
+      <div class="container">
+         <div class="content-wrapper">
+
+
+            <div class="content-content">
+               <div class="leftblock">
+                  <div class="list">
+                     
+            <div style="margin-top: 3px">Автомобили</div> 
+            <div style="margin-top: -17px;"><ul><span style="text-decoration: underline; margin-left: -40px;">Бытовая техника</span>
+            <li style="text-decoration: underline; margin-top: -9px;margin-left:-21px">Микроволновки</li>
+            <li style="margin-top: -8px; margin-left: -22px;">Холодильники</li>
+            <li style="margin-top: -8px; margin-left: -22px">Посудомоечные</li>
+            <li style="margin-top: -7px; margin-left: -21px">Чайники</li></ul></div>
+            <div style="margin-top: -20px;">Мобильная</div>
+            <div>Компьютеры</div>
+            <div>Одежда</div>
+            <div>Недвижимость</div>
+ </div>
+
+ <div class="left-foto">
+    <img src="img/4.png" alt="ex" width="95px" height="111px">
+    <div class="price">Прайс-лист</div>
+ </div>
+               </div>
+
+
+
+               <div class="centerblock">
+                  <div class="photo-center">
+                     <div class="photo-line-one">
+                     <div class="block-one">
+                        <div class="foto-one">
+                           <img src="img/5.png" width="210px" height="209px">
+                        </div>
+                        <div class="text-block">
+                           Самый клевый чайник, который надо купить!
+                        </div>
+                        <div class="zina">1 900 р.</div>
+                        <div style="margin-top: -15px; margin-left: 185px">
+                           <img src="img/6.png">
+                        </div>
+                     </div>
+                
+      
+                     <div class="block-two">
+                      <div class="foto-one">
+                           <img src="img/5.png" width="210px" height="209px">
+                        </div>
+                        <div class="text-block">
+                           Самый клевый чайник, который надо купить!
+                        </div>
+                        <div class="zina">1 900 р.</div>
+                         <div style="margin-top: -15px; margin-left: 185px">
+                           <img src="img/6.png">
+                        </div>
+                     </div>
+                     <div class="block-three">
+                      <div class="foto-one">
+                           <img src="img/5.png" width="210px" height="209px">
+                        </div>
+                        <div class="text-block">
+                           Самый клевый чайник, который надо купить!
+                        </div>
+                        <div class="zina">1 900 р.</div>
+                         <div style="margin-top: -15px; margin-left: 185px">
+                           <img src="img/6.png">
+                        </div>
+                     </div>
+                   </div></div>
+                   <div>
+                  <div class="photo-line-two">
+                     <div class="block-one" style="margin-right: -45px">
+                      <div class="foto-one">
+                           <img src="img/5.png" width="210px" height="209px">
+                        </div>
+                        <div class="text-block">
+                           Самый клевый чайник, который надо купить!
+                        </div>
+                        <div class="zina">1 900 р.</div>
+                         <div style="margin-top: -15px; margin-left: 185px">
+                           <img src="img/6.png">
+                        </div>
+                     </div>
+                     <div class="block-one" style="margin-right:400px; margin-left: -21px; margin-top: 20px;"><div class="foto-one">
+                           <img src="img/5.png" width="210px" height="209px">
+                        </div>
+                        <div class="text-block">
+                           Самый клевый чайник, который надо купить!
+                        </div>
+                        <div class="zina">1 900 р.</div>
+                         <div style="margin-top: -15px; margin-left: 185px">
+                           <img src="img/6.png">
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+
+               
+               <div class="number">
+                1 2 <span style="font-size: 18px;
+color: #444444;">3</span> 4 5 6 7
+               </div>
+               <hr style="margin-top: 60px; margin-right: 45px;">
+
+               <div class="text-center">
+                  <div class="one-block">
+                 <div class="text-one">
+                   Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+                 </div>
+                 </div>
+                 <div class="two-block"> 
+                 <div class="text-two">
+                   Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+                 </div></div>
+               </div>
+            </div>
+            
          </div>
          </div>
      </section>
+
+
+
 
    <footer class="footer">
       <div class="container">
@@ -122,5 +262,39 @@
       </div>
    </footer>
 
+
+
+       <div id="form-container">
+      <div><div class="hrestik">
+         <img id="shape7" src="img/shape_7.png">
+      </div>
+         <div class="caption-form">Обратная связь</div>
+      <div class=" name">Ваше имя *</div>
+      <div class="input-name">
+         <input class="input-name1" type="text" name=" ">
+      </div>
+      <div class="phone">Телефон *</div>
+      <div class="input-phone">
+         <input class="input-phone1" type="text" name=" ">
+      </div>
+      <div class="email">Email *</div>
+      <div class="input-email">
+         <input class="input-email1" type="text" name=" ">
+      </div>
+      <div class="message">Сообщение</div>
+      <div>
+         <textarea  class="message1" name="text"> </textarea>
+      </div>
+      <div class="bottom">
+        <div style="padding-top: 9px; padding-left: 17px;">ОТПРАВИТЬ</div>
+      </div>
+</div>
+   </div>
+
+<script>
+document.getElementById('trigger').onclick = function() {
+document.getElementById('form-container').style.display = 'block';
+}
+</script>
  </body>
  </html>

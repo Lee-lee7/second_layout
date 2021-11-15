@@ -20,6 +20,49 @@
     /* Legacy iOS */
 }
 
+/* pt-sans-regular - latin */
+@font-face {
+    s font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/pt-sans-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/pt-sans-v12-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/pt-sans-v12-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/pt-sans-v12-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/pt-sans-v12-latin-regular.svg#PTSans') format('svg');
+    /* Legacy iOS */
+}
+
+/* pt-sans-700 - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v12-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/pt-sans-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/pt-sans-v12-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/pt-sans-v12-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/pt-sans-v12-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/pt-sans-v12-latin-700.svg#PTSans') format('svg');
+    /* Legacy iOS */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
 html,
 body {
     height: 100%;
@@ -29,6 +72,7 @@ body {
     font-family: 'PT Sans';
     padding: 0;
     margin: 0;
+
 
 }
 
@@ -51,8 +95,6 @@ header {
     justify-content: space-between;
     height: 210px;
     background-color: #dcdcdc;
-
-    display: flex;
 }
 
 .header1 {
@@ -94,10 +136,23 @@ header {
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #767676;
-    margin-top: 65px;
+    margin-top: 33px;
     margin-right: -2px;
 
 }
+
+.zvyazok {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #767676;
+    margin-left: 88px;
+    margin-top: -4px;
+    text-decoration: none;
+}
+
 
 .menu {
     background-color: #767676;
@@ -118,7 +173,7 @@ header {
     width: 1000px;
     height: 80px;
     display: inline-block;
-    
+
 
 }
 
@@ -138,84 +193,212 @@ header {
     display: inline;
 }
 
-.slider {
-    height: 430px;
-
-    z-index: 1;
-}
-
-#foto-slider {
-    margin-top: -80px;
-    margin-left: -136px;
-}
-
-.news {
-    width: 318px;
-    height: 560px;
-    background-color: grey;
-    font-family: 'PT Sans';
-    line-height: 46px;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-    padding-left: 34px;
-    margin-top: -13px;
-
-}
-
-#caption-news {
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 10px;
-}
-
-.date {
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 10px;
-    font-style: italic;
-    margin-top: 5px;
-}
-
-a {
+.second-menu {
     font-family: 'PT Sans';
     font-size: 14px;
-    line-height: 22px;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: 0.025em;
-    color: #ffffff;
+    color: #767676;
+    margin-left: -13px;
+}
+
+.second-menu span {
     text-decoration: none;
-    font-style: normal;
 }
 
-#arhiv {
-    text-align: right;
-    padding-right: 30px;
-    text-decoration: underline;
-    margin-right: 25px;
-    margin-top: 16px;
+
+.slider {
+    width: 1250px;
+    height: 460px;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: -76px;
+
 }
 
-.text-site {
-    color: grey;
-    margin-left: 409px;
-    margin-top: -560px;
-    width: 580px;
+.swiper-button-next {
+    background-color: grey;
+    width: 34px;
+    height: 61px;
+    color: black;
 }
 
-.zagovolok-text {
-    font-size: 40px;
+.swiper-button-prev {
+    background-color: grey;
+    width: 34px;
+    height: 61px;
+    color: black;
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftblock {
+    width: 220px;
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 400;
-    padding-top: 22px;
+    letter-spacing: 0.025em;
+    color: #767676;
 }
 
-p {
-    padding-top: 20px;
+.list li {
+    font-size: 14px;
 }
+
+.left-foto {
+    margin-left: 44px;
+    margin-top: 105px;
+}
+
+.price {
+    font-family: 'PT Sans';
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #444444;
+    margin-top: 5px;
+    margin-left: -40px;
+    margin-right: -40px;
+
+}
+
+
+.centerblock {
+
+    margin-top: -10px;
+    margin-left: 62px;
+
+}
+
+.block-one {
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.photo-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-line-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-two {
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.block-three {
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.photo-line-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-one {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text-block {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+.zina {
+
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #444444;
+    margin-left: 16px;
+    margin-top: 55px;
+}
+
+.number {
+    font-size: 18px;
+    color: #444444;
+    margin-top: 29px;
+    margin-left: 302px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-block {
+    margin-top: 16px;
+    margin-right: -2px;
+}
+
+.two-block {
+    margin-right: 45px;
+    margin-top: 3px;
+}
+
+.text-two {
+    margin-top: 13px;
+    margin-left: 37px;
+    margin-right: 57px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: grey;
     height: 220px;
-    margin-top: 239px;
+    margin-top: 222px;
 }
 
 .footer-wrapper {
@@ -279,3 +462,157 @@ footer {
     margin-top: 10px;
     margin-right: 14px;
 }
+
+
+
+
+.number {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.565em;
+    color: #767676;
+}
+
+.text-center {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-container {
+    width: 466px;
+    height: 578px;
+    color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -218px;
+    z-index: 9999;
+    display: none;
+    background-color: white;
+}
+
+.caption-form {
+    font-family: 'PT Sans';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #535353;
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 13px;
+}
+
+.name {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #535353;
+    margin-top: 25px;
+    margin-right: -130px;
+    padding-left: 202px;
+
+}
+
+.input-name1 {
+    width: 341px;
+    height: 42px;
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+}
+
+.input-name {
+    padding-top: 5px;
+    padding-left: 63px;
+}
+
+.phone {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #535353;
+    margin-top: 15px;
+    margin-right: -130px;
+    padding-left: 207px;
+}
+
+.input-phone1 {
+    width: 341px;
+    height: 42px;
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+    margin-left: 62px;
+    margin-top: 6px;
+}
+
+.email {
+    margin-left: 215px;
+    margin-top: 14px;
+}
+
+.input-email1 {
+    width: 341px;
+    height: 42px;
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+    margin-left: 62px;
+    margin-top: 3px;
+}
+
+.message {
+    margin-top: 15px;
+    margin-left: 197px;
+}
+
+.message1 {
+    width: 341px;
+    height: 142px;
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+    margin-left: 62px;
+}
+
+.bottom {
+    width: 128px;
+    height: 42px;
+    background-color: grey;
+
+}
+
+.bottom {
+    font-family: 'PT Sans';
+    font-size: 17.8px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 22px;
+    margin-left: 168px;
+}
+
+.hrestik {
+    width: 27px;
+    height: 27px;
+    background-color: grey;
+    margin-left: 465px;
+    margin-top: -27px;
+}
+
+#shape7 {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    margin-left: 6px;
+   
+}
+#form-container {}
